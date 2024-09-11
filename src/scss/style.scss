@@ -1,0 +1,58 @@
+@import 'variables';
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+
+
+@font-face {
+  font-family: $font-family;
+  src: url('../fonts/TTLakes-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $font-family;
+  src: url('../fonts/TTLakes-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $font-family;
+  src: url('../fonts/TTLakes-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background: $background-main;
+}
+
+main {
+  margin-top: 42px;
+}
+
+.overlay-added {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: $overlay-color;
+  z-index: 998;
+}
+
+.main-content {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .overlay-added {
+    background: $overlay-color-mobile;
+  }
+}

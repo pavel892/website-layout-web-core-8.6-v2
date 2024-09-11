@@ -1,0 +1,236 @@
+@import 'variables';
+
+.services-block--technology-1440 {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .services-block {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+    .services-block {
+        grid-template-columns: 224px 224px 224px;
+        grid-column-gap: 24px;
+        grid-row-gap: 16px;
+        display: grid;
+        margin-top: 24px;
+        margin-left: 24px;
+
+        &__brand {
+            width: 224px;
+            height: 72px;
+            background: $background-block;
+            border: 1px solid $block-border-color;
+            border-radius: 6px;
+            display: flex;
+          }
+
+        &__logo {
+            width: 45%;
+            margin-left: 16px;
+          }
+
+        &__go-button {
+            width: 40px;
+            margin-left: 44px;
+          }
+
+        &__logo--apple {
+            width: 44px;
+            height: 44px;
+            transform: translate(16px, 12px);
+            margin-right: 72px;
+          }
+
+        &__logo--hp {
+            width: 52px;
+            height: 52px;
+            transform: translate(10px, 10px);
+            margin-right: 64px;
+          }
+
+        &__additional-blocks, .brands-block__brand--1120 {
+            display: none;
+          }
+      }
+
+      .show-additional-blocks {
+        display: grid;
+        grid-template-columns: 224px 224px 224px;
+        grid-column-gap: 24px;
+        grid-row-gap: 16px;
+        animation: vanish 1s;
+      }
+  
+      @keyframes vanish {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      .services-block__technology {
+            background: $background-block;
+            width: 224px;
+            height: 160px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: start;
+            padding: 16px;
+            font-size: $font-size-regular;
+            color: $font-color;
+            font-family: $font-family;
+            font-weight: 500;
+            font-style: normal;
+
+            .services-block__go-button--technology {
+                align-self: flex-end;
+            }
+
+            &--additional-container {
+                display: none;
+            }
+        }
+
+        .show-additional-blocks--technology {
+            display: grid;
+            grid-template-columns: 224px 224px 224px;
+            grid-column-gap: 24px;
+            grid-row-gap: 16px;
+            animation: vanish 1s;
+          }
+
+          @keyframes vanish {
+            from {
+              opacity: 0;
+            }
+            to {
+              opacity: 1;
+            }
+          }
+
+        .section-header-block--prices {
+            margin-top: 32px;
+        }
+  }
+
+  @media (min-width: 800px) and (max-width: 1439px) {
+    .services-block {
+        justify-content: center;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    .services-block {
+      grid-template-columns: 240px 240px 240px 240px;
+      grid-column-gap: 32px;
+      grid-row-gap: 16px;
+      display: grid;
+      margin-top: 24px;
+      margin-left: 32px;
+
+      &__brand {
+        width: 240px;
+        height: 72px;
+        background: $background-block;
+        border: 1px solid $block-border-color;
+        border-radius: 6px;
+        display: flex;
+      }
+
+      &__logo {
+        width: 45%;
+        margin-left: 16px;
+      }
+
+      &__go-button {
+        width: 40px;
+        margin-left: 44px;
+      }
+
+      &__logo--apple {
+        width: 44px;
+        height: 44px;
+        transform: translate(16px, 12px);
+        margin-right: 79px;
+      }
+
+      &__logo--hp {
+        width: 52px;
+        height: 52px;
+        transform: translate(10px, 10px);
+        margin-right: 71px;
+      }
+
+      &__additional-blocks, .brands-block__brand--768 {
+        display: none;
+      }
+    }
+
+    .services-block__technology, .services-block--technology-1440 {
+        background: $background-block;
+        width: 240px;
+        height: 160px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        padding: 16px;
+        font-size: $font-size-regular;
+        color: $font-color;
+        font-family: $font-family;
+        font-weight: 500;
+        font-style: normal;
+
+        .services-block__go-button--technology {
+            align-self: flex-end;
+        }
+
+        &--additional-container, .services-block--technology-1440 {
+            display: none;
+        }
+    }
+
+    .show-additional-blocks {
+        display: grid;
+        grid-template-columns: 240px 240px 240px 240px;
+        grid-column-gap: 32px;
+        grid-row-gap: 16px;
+        animation: vanish 1s;
+
+        &--technology {
+          display: grid;
+          grid-template-columns: 240px 240px 240px 240px;
+          grid-column-gap: 32px;
+          grid-row-gap: 16px;
+          animation: vanish 1s;
+        }
+      }
+
+    @keyframes vanish {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+  
+}
+
+@media (min-width: 1500px) {
+  .services-prices__services {
+    margin: 0 auto !important;
+  }
+
+  .services-block {
+    justify-content: center;
+  }
+}

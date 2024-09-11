@@ -1,0 +1,79 @@
+@import 'variables';
+
+.section-header-block__heading {
+    text-transform: uppercase;
+    font-family: $font-family;
+    font-weight: normal;
+    font-style: normal;
+    color: $font-color-accent;
+    font-size: $font-size-regular;
+    
+    &-container {
+        background: $background-section-header-block;
+        border-top: 1px solid $section-decoration-line;
+      }
+}
+
+  @media (max-width: 767px) {
+
+    .section-header-block {
+        &--first {
+            margin-top: 24px;
+        }
+
+        &--prices {
+            height: 56px;
+            margin-top: 24px;
+        }
+
+        &__heading-container {
+            height: 80px;
+        }
+
+        &__heading {
+            padding: 16px;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+    .section-header-block {
+        margin-top: 32px;
+
+        &--first {
+            margin-top: 32px;
+        }
+
+        &__heading-container {
+            height: 56px;
+        }
+
+        &__heading {
+            padding-top: 16px;
+            padding-left: 24px;
+        }
+    }
+  }
+
+  @media (min-width: 1440px) {
+    .section-header-block {
+        &--first {
+            margin-top: 51px;
+        }
+
+        margin-top: 51px;
+
+        &__heading-container {
+            height: 56px;
+        }
+
+        &__heading {
+            padding-top: 16px;
+            padding-left: 24px;
+        }
+
+        &--prices {
+            margin-top: 50px;
+        }
+    }
+}

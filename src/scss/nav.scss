@@ -1,0 +1,122 @@
+@import 'variables';
+
+nav {
+    .container-mobile {
+        display: none;
+      }
+    .nav__container {
+        display: none;
+    }
+}
+
+.nav {
+    &__line, 
+    &__line-left {
+        background-color: $background-line-in-nav;
+        border-radius: 1px;
+        width: 2px;
+        height: 32px;
+        display: inline-block;
+    }
+    &__icon {
+        width: 40px;
+        height: 40px;
+    }
+    &__first-block, 
+    &__second-block {
+        display: flex;
+        align-items: center;
+    }
+}
+
+    @media (max-width: 767px) {
+        nav {
+            background: $background-nav;
+            height: 88px;
+
+            .nav__container {
+                display: flex;
+                justify-content: space-between;
+                padding-top: 18.59px;
+            }
+        }
+
+        .nav {
+            &__icon--call, 
+            &__icon--chat, 
+            &__icon--profile, 
+            &__line {
+                display: none;
+            }
+
+            &__line-left {
+                order: 3;
+                margin-left: 16.73px;
+            }
+
+            &__icon--hamburger, 
+            &__logo, 
+            &__line {
+                margin-left: 16px;
+            }
+
+            &__icon--repair, 
+            &__icon--checkstatus {
+                margin-right: 16px;
+            }
+        }
+    
+        main {
+          margin-top: 24px;
+        }
+    }
+
+      @media (min-width: 768px) and (max-width: 1439px) {
+        nav {
+            .nav__container {
+                display: flex;
+                justify-content: space-between;
+                padding-top: 18.59px;
+              }
+
+            background: $background-nav;
+            height: 88px;
+        }
+    
+        main {
+          margin-top: 24px;
+        }
+
+        .nav {
+            &__second-block 
+            &__line {
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+
+            &__icon--call, 
+            &__icon--chat {
+                margin-right: 16px;
+            }
+
+            &__line-left {
+                margin-left: 20px;
+            }
+
+            &__icon--hamburger {
+                margin-left: 24px;
+            }
+
+            &__logo, &__line {
+                margin-left: 20.73px;
+              }
+            
+              &__second-block {
+                margin-right: 24px;
+              }
+            
+              &__icon--repair {
+                margin-right: 16px;
+              }
+        }
+    }

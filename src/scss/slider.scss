@@ -1,0 +1,293 @@
+@import 'variables';
+
+.swiper {
+    display: none !important;
+  }
+
+  .services-prices__btn {
+    align-self: flex-end;
+}
+
+  .services-prices__btn button {
+    width: 119px;
+    height: 32px;
+    border-radius: 16px;
+    background: $button-color;
+    border: $button-color;
+    color: $button-text-color;
+    font-family: $font-family;
+    font-weight: bold;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: $font-size-button-text;
+
+    span {
+        display: inline-block;
+        transform: translate(0, -5px);
+    }
+
+    img {
+        transform: translate(6px, 2.5px);
+    }
+  }
+
+  @media (max-width: 767px) {
+    .slider-shadow {
+      width: 24px;
+      height: 81px;
+      background: $scroll-shadow-color;
+      z-index: 999;
+      position: absolute;
+      top: 677px;
+      right: 0;
+
+      &--technology {
+        width: 24px;
+        height: 166px;
+        background: $scroll-shadow-color;
+        z-index: 999;
+        position: absolute;
+        top: 914px;
+        right: 0;
+      }
+
+      &--prices {
+        width: 24px;
+        height: 200px;
+        background: $scroll-shadow-color;
+        z-index: 999;
+        position: absolute;
+        top: 1238px;
+        right: 0;
+      }
+    }
+
+    .slider__logo {
+        &--apple {
+            width: 44px;
+            height: 44px;
+            transform: translate(16px, 12px);
+            margin-right: 64px;
+          }
+
+        &--hp {
+            width: 52px;
+            height: 52px;
+            transform: translate(10px, 10px);
+            margin-right: 62px;
+          }
+    }
+
+    /* swiper slider */
+
+    .swiper-slide:first-child {
+        margin-left: 16px; 
+    }
+
+    .swiper .swiper-slide {
+      overflow: visible;
+    }
+
+    .swiper-wrapper {
+      position: relative;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 154px;
+      display: block !important;
+    }
+
+    .slider--technology {
+        .swiper {
+            width: 100%;
+            height: 212px;
+            display: block !important;
+          }
+    }
+
+    .slider--prices {
+        .swiper {
+            width: 100%;
+            height: 264px;
+            display: block !important;
+        }
+    }
+
+    .swiper-slide {
+      font-size: 18px;
+      background: $background-main;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .slider__element {
+      width: 240px;
+      height: 72px;
+      background: $background-block;
+      border: 1px solid $block-border-color;
+      border-radius: 6px;
+      display: flex;
+      position: absolute;
+      top: 16px;
+      margin-left: 205px;
+    }
+
+    .slider {
+        &--technology .slider__element {
+            height: 160px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+
+        &--prices {
+            margin-top: 26px;
+        }
+
+        &--prices .slider__element {
+            height: 200px;
+            width: 260px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        &--technology .slider__element p {
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            font-family: $font-family;
+            font-size: $font-size-regular;
+            font-weight: normal;
+            font-style: normal;
+            color: $font-color;
+        }
+
+        &--technology .slider__element .slider__go-button {
+            position: absolute;
+            bottom: 16px;
+            right: 16px
+        }
+
+        &__element-first {
+            top: 16px;
+            width: 240px;
+            height: 72px;
+            background: $background-block;
+            border: 1px solid $block-border-color;
+            border-radius: 6px;
+            display: flex;
+            position: absolute;
+          }
+
+        &__logo {
+            width: 45%;
+            margin-left: 16px;
+        }
+
+        &__go-button {
+            width: 40px;
+            margin-left: 60px;
+          }
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+      top: 104px;
+    }
+
+    .slider--technology {
+        .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+            top: 194px;
+          }
+    }
+
+    .slider--prices {
+        .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+            top: 232px;
+          }
+    }
+
+    .slider--prices {
+        p {
+            font-size: $font-size-small;
+            font-family: $font-family;
+            color: $font-color;
+        }
+
+        .slider__element {
+            padding: 16px;
+            display: flex;
+            border-width: 0;
+        }
+
+        .slider__time-cta {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .slider__btn {
+            align-self: flex-end;
+        }
+
+        .slider__btn button {
+            width: 119px;
+            height: 32px;
+            border-radius: 16px;
+            background: $button-color;
+            border: $button-color;
+            color: $button-text-color;
+            font-family: $font-family;
+            font-weight: bold;
+            font-style: normal;
+            text-transform: uppercase;
+            font-size: $font-size-button-text;
+            position: relative;
+            transform: translateY(1px);
+
+            span {
+                position: absolute;
+                left: 12px;
+                top: 8px;
+            }
+
+            img {
+                transform: translate(75px, -4.5px);
+            }
+        }
+
+        .slider__service {
+            align-self: flex-start;
+        }
+
+        .slider__service p {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .slider__service--highlighted, 
+        .slider__price--highlighted, 
+        .slider__time-cta--highlighted {
+            color: $font-color-accent;
+        }
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+      margin: 6px;
+    }
+
+    .swiper-pagination-bullet {
+      width: 12px;
+      height: 12px;
+      background: $slider-pagination-bullet-color;
+      opacity: 1;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: $slider-pagination-bullet-color-active;
+    }
+}

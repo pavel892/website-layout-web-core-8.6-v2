@@ -1,0 +1,146 @@
+@import 'variables';
+
+@media (max-width: 767px) {
+    .services-prices {
+        display: none;
+    }
+}
+
+.services-prices {
+    &__header {
+        margin-top: 31px;
+        margin-left: 40px;
+        display: flex;
+        margin-bottom: 16px;
+        font-size: $font-size-small;
+        color: $font-color-accent;
+        font-family: $font-family;
+
+        p:nth-of-type(2) {
+            margin-left: 246px;
+        }
+    
+        p:nth-of-type(3) {
+            margin-left: 61px;
+        }
+    }
+
+    &__services {
+        width: 720px;
+        height: 324px;
+        background: $background-block;
+        margin-left: 24px;
+        border-radius: 5px;
+        font-size: $font-size-small;
+        color: $font-color;
+        font-family: $font-family;
+    }
+
+    &__service {
+        display: flex;
+        margin-bottom: 16px;
+        padding-top: 16px;
+        align-items: center;
+
+        p:nth-of-type(1) {
+            margin-left: 16px;
+        }
+
+        p:nth-of-type(2) {
+            margin-left: 238px;
+        }
+
+        p:nth-of-type(3) {
+            margin-left: 49px;
+        }
+
+        button {
+            margin-left: 20px;
+        }
+    }
+
+    hr {
+        width: 688px;
+        margin: 0 auto;
+        background-color: $block-border-color;
+        height: 1px;
+        border: none;
+    }
+
+    &__btn button {
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+    &__btn button:hover {
+        transform: scale(1.1);
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1439px) {
+    .services {
+        &-block {
+            justify-content: center;
+        }
+
+        &-prices__services {
+            margin: 0 auto !important;
+        }
+
+        &-prices__header {
+            justify-content: center;
+            margin-left: -195px;
+        }
+    }
+  }
+
+  @media (min-width: 1440px) { 
+    .services-prices {
+
+        &__services {
+            width: 1056px;
+            height: 324px;
+            margin-left: 32px;
+        }
+    
+        &__service {
+            display: flex;
+            margin-bottom: 16px;
+            padding-top: 16px;
+            align-items: center;
+    
+            p:nth-of-type(1) {
+                margin-left: 24px;
+            }
+    
+            p:nth-of-type(2) {
+                margin-left: 350px;
+            }
+    
+            p:nth-of-type(3) {
+                margin-left: 161px;
+            }
+    
+            button {
+                margin-left: 132px;
+            }
+    }
+
+    hr {
+        width: 96%;
+    }
+
+    &__header {
+        justify-content: center;
+        margin-left: -295px;
+
+        p:nth-of-type(2) {
+            margin-left: 358px;
+        }
+    
+        p:nth-of-type(3) {
+            margin-left: 173px;
+        }
+    }
+  }
+  }

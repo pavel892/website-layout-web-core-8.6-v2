@@ -1,0 +1,75 @@
+@import 'variables';
+
+@media (min-width: 768px) and (max-width: 1439px) {
+    .nav {
+        &__icon {
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        &__icon:hover {
+            transform: scale(1.2);
+        }
+    }
+}
+
+.nav-1120 {
+    display: none;
+
+    &__line {
+        width: 4px;
+        height: 40px;
+        background: $accent-color-line;
+        border-radius: 0 4px 4px 0;
+    }
+
+    &__services-list {
+        margin-left: 30px;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: $font-size-heading-big;
+        font-weight: bold;
+        align-self: center;
+        font-family: $font-family;
+        font-weight: bold;
+        font-style: normal;
+        color: $font-color;
+      }
+}
+
+@media (min-width: 1440px) {
+    .nav-1120 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &__buttons {
+        display: flex;
+        align-items: center;
+        font-size: $font-size-regular;
+        color: $font-color;
+
+        span {
+            margin-right: 8px;
+            font-family: $font-family;
+            font-weight: 500;
+            font-style: normal;
+          }
+
+          .nav-1120__icon {
+            margin-right: 32px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+          }
+
+          .nav-1120__icon:hover {
+            transform: scale(1.2);
+          }
+      }
+  
+      &__services {
+        display: flex; 
+        align-items: center;
+      }
+    }
+}
